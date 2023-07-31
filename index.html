@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym</title>
+    <style>
+        *{
+            /* background-color: rgb(190, 10, 10); */
+            /* background-image: url(https://img.freepik.com/premium-vector/fitness-gym-logo_23987-169.jpg?w=740); */
+            /* background-image: url(https://www.mindsetsandreps.com/wp-content/uploads/2022/06/iphone_filter_gym_photos-1024x576.jpg); */
+            background-repeat: no-repeat;
+            background-position:top right;
+            /* width: 1000px; */
+        }
+        .navbar{
+            /* border: 2px solid rebeccapurple; */
+            border-radius: 30px;
+            background-color: aqua;
+        }
+        .navbar ul{
+            overflow: auto;
+            
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+        .navbar li a{
+            border: 2px solid blue;
+            border-radius: 10px;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 10px;
+            margin: 10px 30px;
+            text-decoration: none;
+        }
+        .navbar li a:hover{
+            color: black;
+            border: 2px solid red;
+            border-radius: 30px;
+            background-color: rgb(234, 10, 174);
+            /* padding: 20px 20px; */
+            /* margin: 20px 40px; */
+        }
+        .formbar{
+            color: black;
+            background-color: aqua;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            float: left;
+            margin: 0px 150px;
+            padding: 10px 10px;
+            width: 400px;
+            background-image: none;
+            /* background-color: rgb(90, 27, 27); */
+            text-align: center;
+            border: 2px solid red;
+            border-radius: 30px;
+            /* background-image: url(https://www.mindsetsandreps.com/wp-content/uploads/2022/06/iphone_filter_gym_photos-1024x576.jpg); */
+        }
+        .hp{
+            float: right;
+            width: 700px;
+        }
+        .hp1{
+            color: rgb(196, 196, 33);
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+            margin: 100px 210px 20px ;
+            padding: 10px 10px;
+            border: 2px solid red;
+            width: 300px;
+            background-color: rgb(219, 54, 92);
+            border-radius: 30px;      
+        }
+        *{
+            /* height: 1000px; */
+        }
+        .box{
+            border: 2px solid red;
+            background-color: wheat;
+            display: inline-block;
+            width: 100px;
+            height: 25px;
+            margin: 350px 200px 100px 10px;
+            text-decoration: none;
+            list-style: none;
+        }
+        #box3{
+            position:fixed;
+            right:  1px;
+            text-decoration: none;
+            list-style: none;
+        }
+        .box a:hover{
+            color: blue;
+            background-color: rgb(227, 79, 209);
+            width: 200px;
+            /* padding: 10px 10px; */
+            /* margin: auto; */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://img.freepik.com/premium-vector/fitness-gym-logo_23987-169.jpg?w=740" alt="hh" class="hp">
+    <nav class="navbar">
+        <ul>
+            <li><a href="www.google.com">Home</a></li>
+            <li><a href="www.goo1gle.com">About</a></li>
+            <li><a href="www.goo3gle.com">Services</a></li>
+            <li><a href="www.goog4le.com">Contact us</a></li>
+        </ul>
+    </nav>   
+    <h3 class="hp1">Submit Your Details</h3>
+    <form action="harsh.php" class="formbar">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myname" id="name">
+        </div>
+        <label for="age">Age</label>
+        <div>
+            <input type="number" name="myage" id="age">
+        </div>
+        <label for="Contactnumber">Contact Number</label>
+        <div>
+            <input type="number" name="myContactnumber" id="Contactnumber">
+        </div>
+            <input type="submit" id="submit">
+    </form>
+    <div class="container">
+        <!-- <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div> -->
+        <div class="box" id="box3"> <a href="www.google.com">Chat with us</a></div>
+        <!-- <div class="box" id="box4">4</div> -->
+    </div>
+</body>
+</html>
