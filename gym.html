@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARSH FITNESS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* color: black; */
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            /* border: 2px solid red; */
+        }
+
+        .left h3 {
+            color: black;
+            background-color: rgb(225, 200, 137);
+            background-repeat: no-repeat;
+        }
+
+        .mid {
+            display: block;
+            width: 65%;
+            margin: 20px auto;
+        }
+
+        .mid li {
+            display: inline-block;
+            border: 2px solid red;
+            border-radius: 20px;
+            background-color: rgb(236, 94, 193);
+            padding: 15px 20px;
+            margin: 20px 12px;
+        }
+
+        .mid li a {
+            text-decoration: none;
+        }
+
+        .mid li a:hover {
+            color: rgb(215, 208, 27);
+        }
+
+        .right {
+            position: absolute;
+            right: 40px;
+            top: 40px;
+        }
+
+        .btn {
+            color: black;
+            background-color: red;
+            border-radius: 30px;
+            padding: 10px 10px;
+        }
+
+        .img {
+            float: right;
+            text-align: center;
+            color: rgb(241, 13, 13);
+            border: 2px solid black;
+            padding: 15px 1px;
+            background-color: black;
+        }
+
+        .table h3 {
+            color: black;
+            font-size: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .t1 {
+            color: white;
+            background-color: red;
+            /* padding-bottom: 60%; */
+        }
+
+        .t2 {
+            color: black;
+            background-color: rgb(198, 193, 193);
+        }
+
+        .info h3 {
+            margin-top: 30px;
+            color: black;
+        }
+
+        .info p {
+            margin-top: 30px;
+            line-height: 30px;
+            font-size: large;
+            font-style: normal;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .location h3 {
+            margin: 30px 0px;
+            color: black;
+        }
+
+        .location p {
+            margin-top: 30px;
+            line-height: 30px;
+            font-size: large;
+            font-style: normal;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .facultyfeatures h3 {
+            margin: 30px 0px;
+            color: black;
+        }
+
+        .facultyfeatures li {
+            margin-top: 30px;
+            margin-left: 50px;
+            line-height: 10px;
+            font-size: large;
+            font-style: normal;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .accessibility h3 {
+            margin: 30px 0px;
+            color: black;
+        }
+
+        .accessibility li {
+            margin-top: 30px;
+            margin-left: 50px;
+            line-height: 10px;
+            font-size: large;
+            font-style: normal;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container {
+            display: inline-block;
+            border: 2px solid rgb(221, 15, 15);
+            background-color: rgb(249, 153, 219);
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+
+        .hp input {
+            font-family: cursive;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .container h2 {
+            text-align: center;
+        }
+        .hp1{
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <img src="gym4.jpg" alt="" height="100px" width="100px">
+        <h3>HARSH FITNESS</h3>
+    </div>
+    <div class="mid">
+        <nav class="navbar">
+            <ul type="circle">
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Branches</a></li>
+                <li><a href="#">Memberships</a></li>
+                <li><a href="#">Clubs</a></li>
+                <li><a href="#">FITNESS CENTRE</a></li>
+                <li><a href="#">REC SPORTS</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="right">
+        <button class="btn">Contact Us</button>
+        <button class="btn">Email Us</button>
+    </div>
+    <div class="img">
+        <img src="gym3.jpg" alt="" height="1000px" width="1600px">
+        <h3>The SFU Fitness Centre is for everyone - we are committed to ensuring a safe, welcoming, and inclusive
+            environment for all!</h3>
+    </div>
+
+    <div class="table">
+        <h3>Hours of Operation</h3>
+        <table>
+            <thead>
+                <tr class="t1">
+                    <th>Days of the week</th>
+                    <th>Time</th>
+                    <th>Closures</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="t2">
+                    <td>Mondays - Friday</td>
+                    <td>7:00 AM - 9:00 PM</td>
+                    <td>*Mon. May 22nd 2023 <br>*Mon. Jul 3th 2023 <br>*Mon. Aug 7th 2023 </td>
+                </tr>
+                <tr class="t3">
+                    <td>Saturday - Sunday</td>
+                    <td>10:00 AM - 5: 00 PM</td>
+                </tr>
+                <tr class="t2">
+                    <td>* Women's Hours</td>
+                    <td>8:30 AM - 10:00 AM (Saturday's) </td>
+                </tr>
+            </tbody>
+            <hr>
+        </table>
+    </div>
+    <div class="info">
+        <hr>
+        <h3>GETTING STARTED</h3>
+        <p>Welcome to the SFU Fitness Centre! Overlooking the Terry Fox Field, the SFU Fitness Centre has something for
+            everyone! Inside our weight room, you will find a large selection of cardio and weight-training machines,
+            free weights and exercise props. <br> Membership is included for all students who have paid their Recreation
+            & Athletic Fee, and have completed their waiver on go.sfu. <br> Community Members must have an activeSFU
+            Burnaby Recreation and Athletics Membership or Day Pass to use the Fitness Centre. <br>
+            * You must be 15 years or over to use the Fitness Centre facilities. Adult supervision (19 years+) is
+            required for members aged 15 and 16 years old.</p><hr>
+    </div>
+    <div class="location">
+        <h3>LOCATION</h3><hr>
+        <p>The SFU Fitness Centre is located on the bottom floor of the Lorne Davies Complex (LDC) Building (Room 088).
+            The LDC Building can be found near the West Mall Complex and just before Residence & Housing. There are
+            access points from all levels. Directional signage to the Fitness Centre is posted throughout the complex. <hr>
+        </p>
+    </div>
+    <div class="facultyfeatures">
+        <h3>FACILITY FEATURES & EQUIPMENT</h3> <hr>
+        <ol type="I">
+            <li>Multi-level 12,000 square foot facility</li> 
+            <li>Free Weights and Benches</li>
+            <li>6 Rowing Machines </li>
+            <li>12 Treadmills</li>
+            <li>12 Ellipticals & 2 AMT’s</li>
+            <li>Stretching Areas</li>
+            <li>6 Squat Racks</li>
+            <li>3 Deadlift Platforms</li> <hr>
+        </ol>
+    </div>
+    <div class="accessibility">
+        <h3>ACCESSIBILITY</h3> <hr>
+        <ol type="1">
+            <li>Wheelchair accessible equipment – designed specifically for patrons with disabilities (eg. access
+                equipment where the seat swings out of the way and a wheelchair slides in). </li>
+            <li>Free orientations are available to instruct how to use the equipment. One-on-one programs (for a fee)
+                are available for a prepared training program.</li>
+            <li>Wheelchair accessible ramps installed on lower level – delineated path for wheelchair travel.</li>
+        </ol> <hr>
+    </div>
+    <form action="harsh.php" class="container">
+        <h2>AHMEDABAD'S NUMBER-1 GYM</h2>
+        <div class="hp">
+            <input type="text" name="name" id="name" placeholder="Name">
+        </div>
+        <div class="hp">
+            <input type="number" name="mnumber" id="mnumber" placeholder="Mobile Number">
+
+        </div>
+        <div class="hp">
+            <input type="number" name="age" id="age" placeholder="age">
+
+        </div>
+        <div class="hp">
+            <input type="email" name="email" id="email" placeholder="Email">
+        </div>
+        <div class="hp">
+            <input type="number" name="weight" id="weight" placeholder="weight">
+        </div>
+        <div class="hp">
+            <input type="text" name="Gender" id="Gender" placeholder="Gender">
+        </div>
+        <div class="hp">
+            <input type="submit" name="" id="">
+        </div>
+    </form>
+    <img src="gym5.jpg" alt="" height="700" width="700" class="hp1">
+</body>
+
+</html>
+</body>
+
+</html>
