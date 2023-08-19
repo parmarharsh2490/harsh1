@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before after phedu selecter</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            display: flex;
+
+        }
+
+        header::before {
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+
+        }
+
+        li {
+            list-style: none;
+            margin: 20px 20px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+
+            margin: 50px 00px;
+
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li>Home</li>
+                <li>contact us</li>
+                <li> services</li>
+                <li> About us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>This is my website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a dolor id. Beatae quod accusantium
+            magnam obcaecati vel neque impedit facilis consectetur nemo voluptas debitis a magni inventore nulla
+            minima similique ipsa at, error, reiciendis porro nobis. Architecto, voluptate velit.</p>
+    </section>
+
+
+
+
+
+</body>
+
+</html>
