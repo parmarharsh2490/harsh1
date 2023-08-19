@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variable and properties</title>
+    <style>
+        :root {
+            /* global variable properety */
+
+            --primary-color: red;
+
+            --secondary-color: blue;
+
+            --mxwdth: 800px;
+
+            --mxheight: 600px;
+
+            --danger-color: black;
+
+            --borde-color: green;
+
+            --max-margin: 20px 20px;
+
+            --max-padding: 10px 10px;
+        }
+
+        .container {
+
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-content: center;
+
+            border: 2px solid var(--primary-color);
+
+            background-color: var(--secondary-color);
+        }
+
+        .box {
+            /* local variable properety */
+            --maxheight: 200px;
+            --max-width: 200px;
+            border: 2px solid var(--primary-color);
+
+            height: var(--maxheight);
+
+            width: var(--max-width);
+
+            background-color: var(--secondary-color);
+
+            padding: var(--max-padding);
+
+            margin: var(--max-margin);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+
+        </div>
+        <div class="box">
+
+        </div>
+        <div class="box">
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
