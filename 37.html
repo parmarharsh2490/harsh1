@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition In CSS</title>
+    <style>
+        .container {
+            background-color: aqua;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 800px;
+            height: 600px;
+            margin: 10px auto;
+        }
+
+        .box {
+            width: 500px;
+            height: 200px;
+            background-color: blanchedalmond;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            transition: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        .box:hover {
+            background-color: aquamarine;
+            border-radius: 20px;
+            width: 700px;
+            height: 500px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <!-- <h1>This is transition properety</h1> -->
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita ipsam natus aliquid. Minus dolorum
+                vero consectetur officiis, reprehenderit illo porro sit cupiditate adipisci dicta, laudantium
+                accusantium placeat voluptates facere quo!</p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
