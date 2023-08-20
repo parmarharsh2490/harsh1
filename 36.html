@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and keyframes</title>
+    <style>
+        .container {
+            width: 800px;
+            border: 2px solid red;
+            background-color: azure;
+            margin: 50px auto;
+            display: flex;
+
+        }
+
+        .box {
+            width: 250px;
+            height: 100px;
+            background-color: green;
+            animation-name: viral;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            /* animation-timing-function: ; */
+            /* animation-delay: 2s;  */
+            /* /* animation-direction: alternate-reverse; */
+
+        }
+
+        .container2 {
+            display: flex;
+
+
+            background-color: aqua;
+            border: 2px solid red;
+            margin: 50px auto;
+            width: 800px;
+            height: 500px;
+
+
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            margin: 30px 20px;
+            position: relative;
+            border: 2px solid red;
+            background-color: #0000ff;
+            animation-name: viral2;
+            animation-duration: 5s;
+            animation-iteration-count: 5;
+
+
+        }
+
+        @keyframes viral2 {
+
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 0px;
+                left: 500px;
+            }
+
+            75% {
+                top: 300px;
+                left: 500px;
+            }
+
+            100% {
+                top: 300px;
+                left: 0px;
+            }
+
+        }
+
+
+
+
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        @keyframes viral {
+            to {
+                width: 800px;
+            }
+
+            from {
+                width: 250px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>
+                Loading
+            </h1>
+
+        </div>
+    </div>
+    <div class="container2">
+        <div class="box2">
+
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
