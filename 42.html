@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid spanning</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(3, 100px);
+            grid-gap: 10px;
+
+        }
+
+        .item {
+            background-color: rgb(131, 81, 179);
+            border: 2px solid black;
+
+
+        }
+
+        .item:first-child {
+            grid-column: 1 / span 4;
+            grid-row: 1/ span 2;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">spaning1</div>
+        <div class="item">spaning2</div>
+        <div class="item">spaning3</div>
+        <div class="item">spaning4</div>
+        <div class="item">spaning5</div>
+        <div class="item">spaning6</div>
+        <div class="item">spaning7</div>
+        <div class="item">spaning8</div>
+        <div class="item">spaning9</div>
+    </div>
+
+</body>
+
+</html>
