@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid template Area</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar '
+                'section section section  aside'
+                'footer footer footer footer';
+        }
+
+        .item {
+            background-color: greenyellow;
+            border: 2px solid black;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #navbar span {
+            padding: 0px 10px;
+        }
+
+        #section {
+            grid-area: section;
+            text-align: center;
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            body {
+                background-color: yellow;
+            }
+
+            #aside {
+
+                .container {
+                    grid-template-areas:
+                        'navbar navbar navbar navbar'
+                        'section section section section'
+                        'aside aside aside aside'
+                        'footer footer footer footer ';
+                }
+
+
+
+            }
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        #footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="navbar">
+            <span>Home</span>
+            <span>about </span>
+            <span>services</span>
+        </div>
+        <div class="item" id="section ">
+            <h1>This is section</h1>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla optio deleniti blanditiis? Tempore labore
+            sunt voluptates nostrum voluptatum tenetur impedit minima est voluptatibus expedita nihil consectetur
+            laborum odio fuga tempora ab hic, pariatur quasi ea id, quo ducimus! Voluptatibus numquam distinctio
+            officiis laboriosam labore iusto sapiente nemo dolores aspernatur recusandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ad a impedit sequi necessitatibus illo
+            quas, quam facere qui cupiditate nihil vero
+            doloremque laboriosam fugit rem sed, rerum nesciunt hic quibusdam ea. Et libero quis iure ea eligendi quod
+            que aliquam eaque numquam recusandae consectetur voluptatibus aut
+
+        </div>
+        <div class="item" id="side">
+            <h1>Aside</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, iste.
+
+        </div>
+        <footer id="footer" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, error.
+
+        </footer>
+    </div>
+
+
+</body>
