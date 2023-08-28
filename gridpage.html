@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-rows: 100px 500px 500px 500px; */
+            grid-gap: 2rem;
+            justify-content: center;
+            grid-template-areas:
+                'navbar navbar navbar navbar '
+                'meals meals meals meals'
+                'clients clients clients clients '
+                'cnt cnt cnt cnt '
+                'footer footer footer footer'
+
+        }
+
+        @media screen and (max-width:1000px) {
+            body {
+                background-color: aqua;
+            }
+
+            .navbar {
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .navbar span {
+
+                display: inline;
+                padding: 0px;
+            }
+        }
+
+        .navbar {
+            border: 2px solid black;
+            background-color: antiquewhite;
+            grid-area: navbar;
+            margin: 50px;
+            padding: 20px;
+            /* width: 800px; */
+            /* height: 30px; */
+
+
+
+        }
+
+        .navbar span {
+            padding: 0px 20px;
+        }
+
+        .meals {
+            border: 2px solid black;
+            background-color: aqua;
+            border-radius: 20px;
+            grid-area: meals;
+            margin-right: 50px;
+            margin-left: 50px;
+            /* height: 400px; */
+            text-align: center;
+            /* width: 1000px; */
+
+        }
+
+        .clients {
+            border: 2px solid black;
+            background-color: aquamarine;
+            border-radius: 20px;
+            grid-area: clients;
+            margin: 50px;
+            text-align: center;
+            /* height: 400px; */
+            /* width: 600px; */
+            /* width: 1000px; */
+
+        }
+
+        .Cnt {
+            border: 2px solid black;
+            background-color: beige;
+            border-radius: 20px;
+            grid-area: cnt;
+            /* margin: 50px; */
+            text-align: center;
+            /* height: 400px; */
+            /* width: 600px; */
+            /* justify-content: center; */
+            /* width: 1000px; */
+            margin-right: 50px;
+            margin-left: 50px;
+
+
+
+
+
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        footer {
+            background-color: black;
+            grid-area: footer;
+            color: white;
+            text-align: center;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container ">
+        <nav class="navbar">
+            <Span>Home</Span>
+            <span>About</span>
+            <span>conatct</span>
+            <span>services</span>
+        </nav>
+        <section class="meals">
+            <h1>This is a meals</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo earum facilis enim corporis tempora
+                atque, ratione sint praesentium possimus voluptates?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores cum velit dolorum autem tempora.
+                Recusandae est quasi rerum aspernatur veniam qui excepturi corrupti assumenda omnis architecto
+                voluptates perspiciatis ipsum iste a quae, impedit doloremque aliquid delectus rem ipsam ullam tenetur!
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus numquam neque earum porro accusantium,
+                perspiciatis debitis fuga non labore ad cumque, dicta, quasi doloribus illum optio necessitatibus
+                commodi quos aliquam quam eaque nisi consequuntur? Ad voluptas a obcaecati aspernatur, eaque qui quasi
+                accusantium totam quo quibusdam vero necessitatibus ab maiores porro sunt! Facere possimus nihil ducimus
+                ea voluptates neque laboriosam! Corporis quibusdam, mollitia voluptate facere, itaque soluta repellendus
+                voluptatum iure fugit sit quidem accusantium ipsum porro quaerat ipsa magnam autem quas aliquam ad
+                deleniti aut consequuntur? Vitae maiores at aliquid rerum consequuntur voluptas maxime nostrum. Quos
+                esse voluptatum minus delectus?</p>
+
+        </section>
+        <section class="clients">
+            <h1>This is a Contact</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo earum facilis enim corporis tempora
+                atque, ratione sint praesentium possimus voluptates?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae adipisci iusto sapiente dolorum,
+                consequuntur veniam alias cupiditate? Ex, nulla. Officia, quibusdam soluta. Reiciendis sequi similique
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla excepturi fugit at laudantium
+                consequuntur quaerat voluptatum quas dolore inventore voluptas nisi quod, modi maiores quibusdam. A qui
+                dolorum temporibus quaerat, nobis enim voluptatem veritatis soluta itaque molestias minus odio aliquam
+                vero
+                consequatur accusamus numquam, libero dolor cupiditate fugiat ullam!
+                quisquam fugiat aspernatur, explicabo aliquam at maxime iste unde a odit est vitae ea.</p>
+        </section>
+        <section class="Cnt">
+            <h1>This is a Contact</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo earum facilis enim corporis tempora
+                atque, ratione sint praesentium possimus voluptates?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae adipisci iusto sapiente dolorum,
+                consequuntur veniam alias cupiditate? Ex, nulla. Officia, quibusdam soluta. Reiciendis sequi similique
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla excepturi fugit at laudantium
+                consequuntur quaerat voluptatum quas dolore inventore voluptas nisi quod, modi maiores quibusdam. A qui
+                dolorum temporibus quaerat, nobis enim voluptatem veritatis soluta itaque molestias minus odio aliquam
+                vero
+                consequatur accusamus numquam, libero dolor cupiditate fugiat ullam!
+                quisquam fugiat aspernatur, explicabo aliquam at maxime iste unde a odit est vitae ea.</p>
+        </section>
+        <footer class="footer">
+            This is footer
+        </footer>
+    </div>
+</body>
+
+</html>
