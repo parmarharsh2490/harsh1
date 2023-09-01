@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food delivery</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        #logo {
+            margin: 20px 20px;
+        }
+
+        @media (max-width:1499px) {
+            #logo {
+                margin: 0px;
+            }
+
+        }
+
+
+        #logo img {
+            margin: 5px 5x;
+            height: 80px;
+            width: 80px;
+        }
+
+        @media (max-width:1499px) {
+            #logo img {
+                margin: 5px;
+                width: 50px;
+                height: 50px;
+
+            }
+
+        }
+
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            height: 100px;
+            position: absolute;
+        }
+
+
+        .navbar ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            font-family: 'Bree Serif', serif;
+        }
+
+
+
+
+        .navbar ul li {
+            font-size: 20px;
+            margin: 10px 30px;
+        }
+
+        @media (max-width:1499px) {
+            .navbar ul li {
+                font-size: 1rem;
+                margin: 0px;
+
+            }
+
+        }
+
+
+        .navbar ul li a {
+            display: block;
+            padding: 5px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            color: antiquewhite;
+        }
+
+        @media (max-width:1499px) {
+            .navbar ul li a {
+                font-size: 1rem;
+                padding: 5px 5px;
+
+            }
+
+        }
+
+
+
+        .navbar ul li a:hover {
+            color: white;
+            background-color: grey;
+        }
+
+        /* .navbar ul li a:active {} */
+
+        /* .navbar ul li a:visited {} */
+
+        .navbar::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+
+
+        #search input {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 550px;
+            padding: 5px 3px;
+            border: 2px solid black;
+            height: 20px;
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        @media (max-width:1500px) {
+            #search input {
+                margin-left: 10px;
+                width: 80px;
+                height: 20px;
+
+            }
+
+        }
+
+
+        #search input:hover {
+            background-color: rgb(219, 212, 212);
+
+        }
+
+        #Home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 400px;
+            color: antiquewhite;
+        }
+
+        /* @media (max-width:1500px) {
+            #Home {}
+
+        } */
+
+        #Home::before {
+            content: "";
+            position: absolute;
+            height: 400px;
+            width: 100%;
+            background: url(bg.jpg)no-repeat center center /cover;
+            z-index: -1;
+            opacity: 0.9;
+
+        }
+
+        /* @media (max-width:1500px) {
+            #Home::before {}
+
+        } */
+
+
+
+        #Home h1 {
+            font-size: 3rem;
+            font-family: 'Bree Serif', serif;
+            margin-top: 100px;
+
+
+        }
+
+        @media (max-width:1500px) {
+            #Home h1 {
+                font-size: 1.5rem;
+
+            }
+
+        }
+
+        #Home p {
+            width: 800px;
+            font-family: 'Bree Serif', serif;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.2rem;
+
+        }
+
+        @media (max-width:1500px) {
+            #Home p {
+                width: 300px;
+                margin-top: 10px;
+                font-size: 1rem;
+
+
+            }
+
+        }
+
+        .btn {
+            height: 30px;
+            width: 120px;
+            border: 2px solid black;
+            padding: 3px 5px;
+            font-size: 15px;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 15px 5px grey;
+
+        }
+
+
+
+
+        .btn:hover {
+            background-color: grey;
+            color: white;
+
+        }
+
+
+
+
+        #boxes {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        @media (max-width:1500px) {
+            #boxes {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+
+
+
+        #boxes img {
+            height: 200px;
+            width: 200px;
+        }
+
+        #boxes .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 300px;
+            width: 300px;
+            margin: 20px 20px;
+            border-radius: 20px;
+            box-shadow: 3px 3px 20px rgb(102, 95, 95);
+        }
+
+        @media (max-width:1500px) {
+            #boxes .box {
+                height: 150px;
+                width: 300px;
+
+            }
+        }
+
+        @media (max-width:1500px) {
+            #boxes img {
+                height: 80px;
+                width: 100px;
+                padding: 5px 5px;
+
+            }
+        }
+
+        #boxes .box:hover {
+            background-color: rgb(199, 192, 192);
+            transform: translate(00px, 30px);
+        }
+
+
+        #delivery {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            margin-left: 70px;
+            margin-right: 70px;
+            border-radius: 20px;
+            box-shadow: 3px 3px 20px rgb(102, 95, 95);
+        }
+
+        @media (max-width:1500px) {
+            #delivery {
+                width: 300px;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 45px;
+                margin-right: 30px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .box1 {
+            margin-top: 20px;
+            padding: 5px 5px;
+            height: 320px;
+            position: relative;
+            animation: Del;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @media (max-width:1500px) {
+            #delivery .box1 {
+                height: 200px;
+                width: 200px;
+                margin: 10px auto;
+            }
+        }
+
+        @media (max-width:1500px) {
+            #delivery .box1 img {
+                height: 200px;
+                width: 200px;
+            }
+        }
+
+        @keyframes Del {
+
+            from {
+                top: 0%;
+                left: 20px;
+            }
+
+            to {
+                right: 20px;
+                top: 0%;
+            }
+
+
+        }
+
+        .box2 {
+            margin-top: 20px;
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            height: 320px;
+            font-family: 'Bree Serif', serif;
+            font-size: 1.060rem;
+        }
+
+        @media (max-width:1500px) {
+            #delivery .box2 {
+                height: 300px;
+                margin: 3px 5px;
+
+            }
+        }
+
+        @media (max-width:1500px) {
+            #delivery .box2 p {
+                height: 50px;
+            }
+        }
+
+
+        #clients {
+
+            height: 300px;
+            margin-left: 70px;
+            margin-right: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width:1500px) {
+            #clients {
+                height: 175px;
+                margin-left: 30px;
+                margin-right: 10px;
+                margin-top: 10px;
+                flex-direction: row;
+
+            }
+        }
+
+        #clients::before {
+            content: "";
+            background-color: white;
+            border-radius: 20px;
+            height: 43%;
+            width: 90.85%;
+            position: absolute;
+            box-shadow: 3px 3px 20px rgb(102, 95, 95);
+            z-index: -1;
+
+        }
+
+        @media (max-width:1500px) {
+
+            #clients::before {
+                height: 20%;
+                width: 90.85%;
+            }
+
+        }
+
+        #clients .box-1 img:hover {
+
+            transform: translate(00px, 30px);
+        }
+
+
+
+        #clients .box-1 {
+            padding: 0px 0px;
+            margin: 20px 20px;
+            transform: translate(00px, 30px);
+        }
+
+        @media (max-width:1500px) {
+            #clients .box-1 {
+                margin: 0px;
+                margin-bottom: 30px;
+
+
+            }
+        }
+
+
+
+        @media (max-width:1500px) {
+            #clients .box-1 img {
+                height: 91px;
+                width: 84px;
+            }
+        }
+
+        #contact {
+            display: flex;
+
+        }
+
+        .box4 {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 70px;
+            margin-right: 70px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bree Serif', serif;
+            font-size: 1.2rem;
+
+        }
+
+        @media (max-width:1500px) {
+            .box4 {
+                margin-bottom: 50px;
+            }
+
+        }
+
+        .box4::before {
+            content: "";
+            position: absolute;
+            height: 500px;
+            width: 90.85%;
+            background: url(bg2.jpg)no-repeat center center/cover;
+            z-index: -1;
+            opacity: 0.7;
+            border-radius: 20px;
+            box-shadow: 3px 3px 20px rgb(102, 95, 95);
+
+        }
+
+        .box4 input {
+            display: flex;
+            width: 500px;
+            height: 20px;
+            border-radius: 3px;
+            border: 2px solid black;
+            font-size: 1rem;
+            padding: 5px;
+            margin: 2px 2px;
+        }
+
+        @media (max-width:1500px) {
+            .box4 input {
+                width: 285px;
+                height: 12px;
+            }
+
+        }
+
+
+        .box4 textarea {
+            border-radius: 6px;
+            border: 2px solid black;
+
+
+        }
+
+        @media (max-width:1500px) {
+            .box4 textarea {
+                width: 285px;
+            }
+
+
+
+        }
+
+        .bottom {
+            background-color: white;
+            margin-top: 50px;
+            margin-left: 70px;
+            margin-right: 70px;
+            height: 300px;
+        }
+
+        @media (max-width:1500px) {
+            .bottom {
+
+                height: 100px;
+                width: 100px;
+            }
+        }
+
+        .bottom ul {
+            display: flex;
+            /* border: 2px solid red; */
+            /* justify-content: center; */
+            margin-top: 30px;
+            flex-direction: row;
+            list-style: none;
+            font-family: 'Bree Serif', serif;
+        }
+
+        @media (max-width:1500px) {
+            .bottom ul {
+
+                margin-top: 30px;
+                flex-direction: row;
+                list-style: none;
+                font-family: 'Bree Serif', serif;
+            }
+
+        }
+
+        .bottom ul li {
+            font-size: 20px;
+            padding: 10px 100px;
+            margin: 10px 30px;
+        }
+
+        .bottom ul li a {
+            display: block;
+            padding: 5px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            color: black;
+        }
+
+        .text {
+            font-style: inherit;
+            font-size: 1.5rem;
+        }
+
+        .h1-primary {
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 20px;
+            margin-bottom: 20px
+        }
+
+        @media (max-width:1500px) {
+            .h1-primary {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+                margin-top: 10px;
+
+
+
+            }
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div id="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#boxes">Sevices</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#clients">About</a></li>
+            </ul>
+            <label for="search"></label>
+            <div id="search">
+                <input type="text" name="search" id="serach"
+                    placeholder="Search...">
+
+            </div>
+
+        </nav>
+        <section id="Home">
+            <h1>
+                Welcome To Food delivery
+            </h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
+                sapiente assumenda saepe tempore
+                exercitationem excepturi debitis voluptatem labore sed velit?
+                lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolore, inventore numquam. Labore quod aperiam,
+                quos ex alias incidunt autem perferendis.</p>
+            <button class="btn"> Order Now</button>
+        </section>
+        <section>
+            <h1 class="h1-primary">Meals</h1>
+            <hr>
+            <div id="boxes">
+                <div class="box">
+                    <img src=" pizza.png" alt="pizza">
+                    <h1>Pizza</h1>
+
+                </div>
+                <div class="box">
+                    <img src="burger.png" alt="burger">
+                    <h1>Burger</h1>
+
+                </div>
+                <div class="box">
+                    <img src="hotdog.png" alt="hotdog">
+                    <h1>Hot-Dog</h1>
+                </div>
+                <div class="box">
+                    <img src="tacos.png" alt="hotdog">
+                    <h1>Tacos</h1>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+            <h1 class="h1-primary">Services</h1>
+            <hr>
+            <div id="delivery">
+                <div class="box1">
+                    <img src=" delivery.png" alt="delivery" height="300px"
+                        width="300px">
+                </div>
+                <div class="box2">
+                    <h2>Fastest Food delivery</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Magnam, culpa inventore sapiente dolores
+                        amet nulla possimus iure neque saepe, quo velit omnis
+                        quam aliquid iusto? Sunt nihil doloribus
+                        commodi facilis blanditiis! Ea aliquam obcaecati aperiam
+                        nisi alias tempora laudantium, laborum
+                        vitae vel itaque animi ad illo doloribus delectus autem
+                        reiciendis!</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h1 class="h1-primary">Clients</h1>
+            <hr>
+            <div id="clients">
+                <div class="box-1">
+                    <img src="Pizza hut.png" alt height="200px" width="200px">
+                </div>
+                <div class="box-1">
+                    <img src="Star.png" alt height="200px" width="200px">
+                </div>
+                <div class=box-1>
+                    <img src="Mac.png" alt height="200px" width="200px">
+
+                </div>
+                <div class="box-1">
+                    <img src="Nes.png" alt height="200px" width="300px">
+                </div>
+
+            </div>
+        </section>
+        <section>
+
+            <div id="Contact">
+                <div class="box4">
+
+                    <h1 class="h1-primary">Contact</h1>
+
+                    <form action="backend.php"></form>
+                    <div>
+                        <label for="Name">Name:</label>
+                        <input type="text" name="Name" id="Name">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="number">Contact Number:</label>
+                        <input type="number" name="number" id="number">
+
+                    </div>
+                    <label for="text">Meseage:</label>
+                    <div>
+                        <textarea name="text" id="text" cols="66" rows="10"></textarea>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- <section>
+        <div class="bottom">
+          
+            <hr>
+            <ul>
+                <li><a href="#" class="text">Home</a>
+                    <a href="">123</a>
+                    <a href="">123</a>
+                    <a href="">123</a>
+                    <a href="">123</a>
+                    <a href="">123</a>
+
+
+                </li>
+                <li><a href="#" class="text">About</a>
+                    <a href=""></a>
+                    <a href="">456</a>
+                    <a href="">456</a>
+                    <a href="">456</a>
+                    <a href="">456</a>
+
+
+                </li>
+                <li><a href="#" class="text">Services</a>
+                    <a href="">789</a>
+                    <a href="">789</a>
+                    <a href="">789</a>
+                    <a href="">789</a>
+                    <a href="">789</a>
+
+                </li>
+
+                <li><a href="#" class="text">Contact</a>
+                    <a href="">111</a>
+                    <a href="">111</a>
+                    <a href="">111</a>
+                    <a href="">111</a>
+                    <a href="">111</a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+    </section> -->
+        <footer>
+            <div class="footer">
+                copyright &copy; www.FooDelivery.com. All rights reserved
+            </div>
+        </footer>
+
+    </body>
+
+</html>
